@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="form-wrapper login">
+        <form [formGroup]="formLogin" (submit)="procesar($event)">
+
+            <h2>Login</h2>
+
+            <div class="input-group">
+                <input type="text" placeholder="Correo electrónico" class="input" id="email" formControlName="email">
+
+                <div class="alert alert-danger mt-2" [hidden]="email.valid || email.pristine">
+                    El correo electrónico es requerido
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Contraseña" class="input" id="password" formControlName="password">
+
+                <div class="alert alert-danger mt-2" [hidden]="password.valid || password.pristine">
+                    La contraseña es requerida
+                </div>
+            </div>
+
+            <button type="submit" class="input btn">Iniciar sesión</button>
+            <div class="signup-link">
+                <a routerLink="/register" class="signupbtn-link">Registrarse</a>
+            </div>
+        </form>
+    </div>
+</div>

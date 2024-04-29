@@ -1,0 +1,39 @@
+header nav {
+    padding: 25px;
+    background-color: #7B1FA2;
+  }
+  
+  .navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-item {
+    list-style: none;
+    margin-right: 15px; /* Ajusta el espaciado entre elementos */
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .boton {
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    border-radius: 10px;
+    background-color: white; /* Cambia el color de fondo del botón */
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: black; /* Cambia el color de fondo del botón al pasar el mouse */
+    color: white;
+  }
+  

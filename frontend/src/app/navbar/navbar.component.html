@@ -1,0 +1,14 @@
+<header>
+  <nav>
+    <ul class="navbar-list">
+      <ng-container *ngIf="!userService.isLoggedIn; else loggedIn">
+        <li class="navbar-item"><a class="navbar-link" routerLink="/home">Xuxemons</a></li>
+        <li class="navbar-item"><button class="boton" routerLink="/login">Login</button></li>
+      </ng-container>
+      <ng-template #loggedIn>
+        <li class="navbar-item"><a class="navbar-link" routerLink="/dashboard">Xuxemons</a></li>
+        <li class="navbar-item"><button class="boton" (click)="logout()">Logout</button></li>
+      </ng-template>
+    </ul>
+  </nav>
+</header>

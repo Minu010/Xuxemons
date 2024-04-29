@@ -1,0 +1,25 @@
+<div class="wrapper">
+    <div class="form-wrapper login">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <h2>Registro</h2>
+
+            <div class="input-group">
+                <input type="text" formControlName="name" placeholder="nombre" class="input">
+            </div>
+
+            <div class="input-group">
+                <input type="email" formControlName="email" placeholder="Correo electrónico" class="input">
+            </div>
+
+            <div class="input-group">
+                <input type="password" formControlName="password" placeholder="Contraseña" class="input">
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Repetir contraseña" class="input">
+            </div>
+
+            <button type="submit" class="input btn">Registrarse</button>
+        </form>
+    </div>
+</div>
